@@ -27,12 +27,19 @@ struct PushButton: View {
 }
 
 struct ContentView: View {
-    @State private var remember = false
+   // @State private var remember = false
+    @AppStorage("notes") private var notes = ""
     
     var body: some View {
-        VStack {
-            PushButton(title: "Remember Me", isOn: $remember)
-            Text(remember ? "On" : "Off")
+//        VStack {
+//            PushButton(title: "Remember Me", isOn: $remember)
+//            Text($remember ? "On" : "Off")
+//        }
+        
+        NavigationView {
+            TextEditor(text: $notes)
+                .navigationTitle("notes")
+                .padding()
         }
     }
 }
