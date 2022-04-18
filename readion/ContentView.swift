@@ -27,20 +27,14 @@ struct PushButton: View {
 }
 
 struct ContentView: View {
-   // @State private var remember = false
-    @AppStorage("notes") private var notes = ""
+    @FetchRequest(sortDescriptors: []) var students: FetchedResults<Student>
     
-    var body: some View {
-//        VStack {
-//            PushButton(title: "Remember Me", isOn: $remember)
-//            Text($remember ? "On" : "Off")
-//        }
-        
-        NavigationView {
-            TextEditor(text: $notes)
-                .navigationTitle("notes")
-                .padding()
-        }
+     var body: some View {
+         VStack {
+             List(students) { student in
+                 Text(student.name ?? "Unknown")
+             }
+         }
     }
 }
 

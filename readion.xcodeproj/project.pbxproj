@@ -12,6 +12,8 @@
 		B29CBF55280433E3006B8A8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29CBF54280433E3006B8A8A /* Assets.xcassets */; };
 		B29CBF58280433E3006B8A8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29CBF57280433E3006B8A8A /* Preview Assets.xcassets */; };
 		B29CBF62280433E3006B8A8A /* readionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29CBF61280433E3006B8A8A /* readionTests.swift */; };
+		B29CBFC3280CDD42006B8A8A /* Readion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B29CBFC1280CDD42006B8A8A /* Readion.xcdatamodeld */; };
+		B29CBFC5280CDE05006B8A8A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29CBFC4280CDE05006B8A8A /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		B29CBF57280433E3006B8A8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B29CBF5D280433E3006B8A8A /* readionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = readionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29CBF61280433E3006B8A8A /* readionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readionTests.swift; sourceTree = "<group>"; };
+		B29CBFC2280CDD42006B8A8A /* Readion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Readion.xcdatamodel; sourceTree = "<group>"; };
+		B29CBFC4280CDE05006B8A8A /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +77,10 @@
 		B29CBF4F280433E1006B8A8A /* readion */ = {
 			isa = PBXGroup;
 			children = (
+				B29CBFC1280CDD42006B8A8A /* Readion.xcdatamodeld */,
 				B29CBF50280433E1006B8A8A /* readionApp.swift */,
 				B29CBF52280433E1006B8A8A /* ContentView.swift */,
+				B29CBFC4280CDE05006B8A8A /* DataController.swift */,
 				B29CBF54280433E3006B8A8A /* Assets.xcassets */,
 				B29CBF56280433E3006B8A8A /* Preview Content */,
 			);
@@ -198,6 +204,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B29CBF53280433E1006B8A8A /* ContentView.swift in Sources */,
+				B29CBFC5280CDE05006B8A8A /* DataController.swift in Sources */,
+				B29CBFC3280CDD42006B8A8A /* Readion.xcdatamodeld in Sources */,
 				B29CBF51280433E1006B8A8A /* readionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +474,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B29CBFC1280CDD42006B8A8A /* Readion.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B29CBFC2280CDD42006B8A8A /* Readion.xcdatamodel */,
+			);
+			currentVersion = B29CBFC2280CDD42006B8A8A /* Readion.xcdatamodel */;
+			path = Readion.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B29CBF45280433E1006B8A8A /* Project object */;
 }
